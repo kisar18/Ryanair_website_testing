@@ -1,0 +1,16 @@
+Open browser and maximize window
+
+Login (email, password)
+Login (username, password)
+
+Register
+
+Apply discount
+
+Accept cookie
+Reject cookie
+
+Email news subscription
+
+Table length change
+Table category change
