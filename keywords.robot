@@ -43,6 +43,8 @@ Check Hover Effect
 # Register keywords (without any verification code)
 Register With Empty Fields
   [Arguments]  ${Expected_Warning}
+  Sleep  1
+  Select Frame  xpath=//iframe[@data-ref='kyc-iframe']
   Wait Until Element Is Visible  ${Register_Email_Field}
   Wait Until Element Is Visible  ${Register_Password_Field}
   Submit Form  ${Register_Button}
@@ -98,3 +100,51 @@ Login With Email Password
   Put Text Into Field  ${Login_Password_Field}  ${Password_Value}
   Submit Form  ${Login_Button}
   Wait Until Page Contains  ${Expected_Text}
+
+# MainPage UI elements testing
+Check If Search Flight Is Present
+  [Arguments]  ${Expected_Text}
+  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
+  Wait Until Page Contains  ${Expected_Text}
+
+Search Flight With Empty Airports
+  [Arguments]  ${Expected_Text}
+  Element Should Be Visible  ${MainPage_Departure_Airport_Container}
+  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
+  Element Should Be Visible  ${MainPage_Search_Flight_Button}
+  Click Element  ${MainPage_Departure_Airport_Field}
+  Wait Until Element Is Visible  ${MainPage_Clear_Airports_Button}
+  Click Element  ${MainPage_Clear_Airports_Button}
+  Sleep  1
+  Submit Form  ${MainPage_Search_Flight_Button}
+  Element Attribute Value Should Be  ${MainPage_Departure_Airport_Field}  placeholder  ${Expected_Text}
+  Element Attribute Value Should Be  ${MainPage_Departure_Airport_Container}  class    ${MainPage_Search_Flight_Error_Css_Class_For_Departure}
+
+Search Flight With Empty Destination Airport
+  [Arguments]  ${Expected_Text}
+  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
+  Element Should Be Visible  ${MainPage_Destination_Airport_Container}
+  Element Should Be Visible  ${MainPage_Destination_Airport_Field}
+  Element Should Be Visible  ${MainPage_Search_Flight_Button}
+  Click Element  ${MainPage_Departure_Airport_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Czech_Airports_Button}
+  Click Element  ${MainPage_Search_Flight_Czech_Airports_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Ostrava_Airport_Button}
+  Click Element  ${MainPage_Search_Flight_Ostrava_Airport_Button}
+  Submit Form  ${MainPage_Search_Flight_Button}
+  Element Attribute Value Should Be  ${MainPage_Destination_Airport_Field}  placeholder  ${Expected_Text}
+  Element Attribute Value Should Be  ${MainPage_Destination_Airport_Container}  class    ${MainPage_Search_Flight_Error_Css_Class_For_Destination}
+
+Search Flight With Empty Travel Dates
+  [Arguments]  ${Expected_Text}
+  Element Should Be Visible  ${MainPage_Destination_Airport_Container}
+  Element Should Be Visible  ${MainPage_Destination_Airport_Field}
+  Element Should Be Visible  ${MainPage_Search_Flight_Button}
+  Click Element  ${MainPage_Destination_Airport_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Spanish_Airports_Button}
+  Click Element  ${MainPage_Search_Flight_Spanish_Airports_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Malaga_Airport_Button}
+  Click Element  ${MainPage_Search_Flight_Malaga_Airport_Button}
+  Submit Form  ${MainPage_Search_Flight_Button}
+  Wait Until Page Contains  ${Expected_Text}
+  Element Attribute Value Should Be  ${MainPage_Start_Date_Field}  class    ${MainPage_Search_Flight_Error_Css_Class_For_Start_Date}

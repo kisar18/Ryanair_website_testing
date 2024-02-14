@@ -15,6 +15,7 @@ ${Result_Title}  Oficiální internetové stránky Ryanair | Levné lety | Exklu
 *** Test Cases ***
 # You can run tests by command: python3 -m robot FILENAME.robot
 
+# !!!!! Unfortunately XPath of registration elements is not working correctly thats why these tests are gonna fail !!!!!
 Pre-Conditions
   Pre Condition Open Browser And Maximize  ${ChromeBrowser}  ${URL}  ${UI_Element}  0.2
 
@@ -23,6 +24,11 @@ TC01-Ryanair_MainPage_Navigate_To_RegisterPage
 
 TC02-Ryanair_RegisterPage_Register_With_Empty_Fields
   Register With Empty Fields  Je třeba uvést e-mail
+
+Post-Conditions
+  Post Condition Close Browser
+
+*** Comments ***
 
 TC03-Ryanair_RegisterPage_Register_With_Email
   Register With Email Result Text  email  Neplatný formát e-mailové adresy
@@ -38,6 +44,3 @@ TC06-Ryanair_RegisterPage_Register_With_Non_Existing_Email
 
 TC07-Ryanair_RegisterPage_Register_With_Weak_Password
   Register With Incorrect Value In Field Result Label Color  ${Register_Password_Field}  passwd  \#cf2e1d
-
-Post-Conditions
-  Post Condition Close Browser
