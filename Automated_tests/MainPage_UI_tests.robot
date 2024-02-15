@@ -30,16 +30,21 @@ TC03-Ryanair_MainPage_Flight_Search_Empty_Destination_Airport
 TC04-Ryanair_MainPage_Flight_Search_Empty_Travel_Dates
   Search Flight With Empty Travel Dates  Vyberte termín cesty
 
+TC06-Ryanair_MainPage_Flight_Search_Empty_Return_Date
+  Search Flight With Empty Return Date  Vyberte termín cesty
+
+TC07-Ryanair_MainPage_Flight_Search_Flight_With_Valid_Attributes
+  Search Flight With Valid Attributes  Ostrava do Malaga
+
+TC0X-Ryanair_MainPage_Flight_Search_One_Way_Flight_No_Return_Date_Present
+  Go Back
+  Search Flight Check One Way Flight Form
+
 Post-Conditions
   Post Condition Close Browser
 *** Comments ***
-TC02-Ryanair_MainPage_Flight_Search_Promo_Code
-TC06-Ryanair_MainPage_Flight_Search_Empty_Return_Date
-TC07-Ryanair_MainPage_Flight_Search_Flight_With_Valid_Attributes
-TC08-Ryanair_MainPage_Flight_Search_One_Way_Flight_No_Return_Date_Present
 
 
+TCXX-Ryanair_MainPage_Flight_Search_Promo_Code
 TCXX-Ryanair_MainPage_Check_Car_Rent
 TCXX-Ryanair_MainPage_Check_Hotels
-
-

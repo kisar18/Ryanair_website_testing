@@ -148,3 +148,45 @@ Search Flight With Empty Travel Dates
   Submit Form  ${MainPage_Search_Flight_Button}
   Wait Until Page Contains  ${Expected_Text}
   Element Attribute Value Should Be  ${MainPage_Start_Date_Field}  class    ${MainPage_Search_Flight_Error_Css_Class_For_Start_Date}
+
+Search Flight With Empty Return Date
+  [Arguments]  ${Expected_Text}
+  Element Should Be Visible  ${MainPage_Search_Flight_Button}
+  Element Should Be Visible  ${MainPage_Start_Date_Field}
+  Click Element  ${MainPage_Start_Date_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_June_Calendar_Button}
+  Click Element  ${MainPage_Search_Flight_June_Calendar_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_June_3_Calendar_Button}
+  Click Element  ${MainPage_Search_Flight_June_3_Calendar_Button}
+  Submit Form  ${MainPage_Search_Flight_Button}
+  Wait Until Page Contains  ${Expected_Text}
+
+Search Flight With Valid Attributes
+  [Arguments]  ${Expected_Text}
+  Element Should Be Visible  ${MainPage_Search_Flight_Button}
+  Element Should Be Visible  ${MainPage_Return_Date_Field}
+  Click Element  ${MainPage_Return_Date_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_June_6_Calendar_Button}
+  Click Element  ${MainPage_Search_Flight_June_6_Calendar_Button}
+  Submit Form  ${MainPage_Search_Flight_Button}
+  Sleep  1
+  Wait Until Page Contains  ${Expected_Text}
+
+Search Flight Check One Way Flight Form
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Button}
+  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
+  Element Should Be Visible  ${MainPage_Destination_Airport_Field}
+  Element Should Be Visible  ${MainPage_Search_Flight_One_Way_Flight_RadioButton}
+  Click Element  ${MainPage_Departure_Airport_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Czech_Airports_Button}
+  Click Element  ${MainPage_Search_Flight_Czech_Airports_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Ostrava_Airport_Button}
+  Click Element  ${MainPage_Search_Flight_Ostrava_Airport_Button}
+  Sleep  1
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Spanish_Airports_Button}
+  Click Element  ${MainPage_Search_Flight_Spanish_Airports_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Malaga_Airport_Button}
+  Click Element  ${MainPage_Search_Flight_Malaga_Airport_Button}
+  Sleep  1
+  Click Element  ${MainPage_Search_Flight_One_Way_Flight_RadioButton}
+  Wait Until Element Is Not Visible  ${MainPage_Return_Date_Field}
