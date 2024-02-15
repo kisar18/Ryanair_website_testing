@@ -37,3 +37,5 @@ ${MainPage_Search_Flight_June_6_Calendar_Button}  //*[@id="ry-tooltip-11"]/div[2
 ${MainPage_Search_Flight_One_Way_Flight_RadioButton}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/ry-radio-button[2]
 
 ${MainPage_Search_Flight_Two_Way_Flight_RadioButton}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/ry-radio-button[1]
+
+${MainPage_Search_Flight_Promo_Code_RadioButton}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/fsw-promo-code-container/fsw-promo-code/button

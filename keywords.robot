@@ -190,3 +190,19 @@ Search Flight Check One Way Flight Form
   Sleep  1
   Click Element  ${MainPage_Search_Flight_One_Way_Flight_RadioButton}
   Wait Until Element Is Not Visible  ${MainPage_Return_Date_Field}
+
+Search Flight With Promo Code
+  Element Should Be Visible  ${MainPage_Search_Flight_Button}
+  Element Should Be Visible  ${MainPage_Search_Flight_Promo_Code_RadioButton}
+  Element Should Be Visible  ${MainPage_Start_Date_Field}
+  Click Element  ${MainPage_Start_Date_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_June_Calendar_Button}
+  Click Element  ${MainPage_Search_Flight_June_Calendar_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_June_3_Calendar_Button}
+  Click Element  ${MainPage_Search_Flight_June_3_Calendar_Button}
+  Sleep  1
+  Click Element  ${MainPage_Search_Flight_Promo_Code_RadioButton}
+  Wait Until Element Is Visible  ${MainPage_Promo_Code_Field}
+  Put Text Into Field  ${MainPage_Promo_Code_Field}  BestPromoCode
+  Submit Form  ${MainPage_Search_Flight_Button}
+  Wait Until Element Is Visible  ${MainPage_Promo_Code_Error_Element}

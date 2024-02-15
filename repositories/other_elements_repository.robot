@@ -33,3 +33,7 @@ ${MainPage_Start_Date_Field}  //*[@id="main-content"]/fsw-flight-search-widget-c
 ${MainPage_Search_Flight_Error_Css_Class_For_Start_Date}  flight-widget-content__control flight-widget-content__control--date ng-tns-c2916670490-4 ng-trigger ng-trigger-datesFromTripTypeChange input-button--connected-right input-button--error
 
 ${MainPage_Return_Date_Field}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div[2]/div/fsw-input-button[2]
+
+${MainPage_Promo_Code_Field}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/fsw-promo-code-container/fsw-promo-code/ry-input-d/div/input
+
+${MainPage_Promo_Code_Error_Element}  /html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/banners-container/promo-code-message/promo-code-error-message
