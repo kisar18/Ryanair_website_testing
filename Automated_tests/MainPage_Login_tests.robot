@@ -18,25 +18,25 @@ ${Result_Title}  Oficiální internetové stránky Ryanair | Levné lety | Exklu
 Pre-Conditions
   Pre Condition Open Browser And Maximize  ${ChromeBrowser}  ${URL}  ${UI_Element}  0.2
 
-TC01-Ryanair_MainPage_Navigate_To_LoginPage
+TC_02_01-Ryanair_MainPage_Navigate_To_LoginPage
   Navigate To Page By Button And Check Title  ${Login_Menu_Button}  ${Result_Title}
 
-TC02-Ryanair_LoginPage_Login_With_Empty_Fields
+TC_02_02-Ryanair_MainPage_Login_With_Empty_Fields
   Login With Empty Fields  Je třeba uvést e-mail
 
-TC03-Ryanair_LoginPage_Login_With_Incorrect_Informations
+TC_02_03-Ryanair_MainPage_Login_With_Incorrect_Informations
   Login With Email Password  email  passwd  Neplatný formát e-mailové adresy
 
-TC04-Ryanair_LoginPage_Login_With_Bad_Email_Format
+TC_02_04-Ryanair_MainPage_Login_With_Bad_Email_Format
   Login With Email Password  email@com  passwd  Neplatný formát e-mailové adresy
 
-TC05-Ryanair_LoginPage_Login_With_Correct_Name_And_Incorrect_Password
+TC_02_05-Ryanair_MainPage_Login_With_Correct_Name_And_Incorrect_Password
   Login With Email Password  mapewe1725@giratex.com  passwd  Neplatný e-mail nebo heslo
 
-TC06-Ryanair_LoginPage_Login_With_Non_Existing_Email
+TC_02_06-Ryanair_MainPage_Login_With_Non_Existing_Email
   Login With Email Password  Ema1l@l1amE.com  passwd  Neplatný e-mail nebo heslo
 
-TC07-Ryanair_LoginPage_Login_With_Correct_Name_And_Correct_Password
+TC_02_07-Ryanair_MainPage_Login_With_Correct_Name_And_Correct_Password
   Login With Email Password  mapewe1725@giratex.com  Hesl0Hesl0  mapewe1725@giratex.com
 
 Post-Conditions

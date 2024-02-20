@@ -1,0 +1,19 @@
+ID - TC_01_02
+Title - TC_01_02-Ryanair_MainPage_Register_With_Empty_Fields
+Description - Test case that tests registration with empty fields
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+  6) Click button "Registrovat" in the upper-right bar
+
+Steps
+  1) Click button "Vytvořit účet"
+
+Expected result
+  Warnings indicating empty fields should be present
+
+Version - 1.0 

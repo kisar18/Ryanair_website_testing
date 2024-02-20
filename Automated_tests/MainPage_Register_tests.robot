@@ -19,10 +19,10 @@ ${Result_Title}  Oficiální internetové stránky Ryanair | Levné lety | Exklu
 Pre-Conditions
   Pre Condition Open Browser And Maximize  ${ChromeBrowser}  ${URL}  ${UI_Element}  0.2
 
-TC01-Ryanair_MainPage_Navigate_To_RegisterPage
+TC_01_01-Ryanair_MainPage_Navigate_To_RegisterPage
   Navigate To Page By Button And Check Title    ${Register_Menu_Button}    ${Result_Title}
 
-TC02-Ryanair_RegisterPage_Register_With_Empty_Fields
+TC_01_02-Ryanair_MainPage_Register_With_Empty_Fields
   Register With Empty Fields  Je třeba uvést e-mail
 
 Post-Conditions
@@ -30,17 +30,17 @@ Post-Conditions
 
 *** Comments ***
 
-TC03-Ryanair_RegisterPage_Register_With_Email
+TC_01_03-Ryanair_MainPage_Register_With_Email
   Register With Email Result Text  email  Neplatný formát e-mailové adresy
 
-TC04-Ryanair_RegisterPage_Register_With_Email_Without_Dot
+TC_01_04-Ryanair_MainPage_Register_With_Email_Without_Dot
   Register With Email Result Text  email@email  Neplatný formát e-mailové adresy
 
-TC05-Ryanair_RegisterPage_Register_With_Email_Without_At_Sign
+TC_01_05-Ryanair_MainPage_Register_With_Email_Without_At_Sign
   Register With Email Result Text  email.email  Neplatný formát e-mailové adresy
 
-TC06-Ryanair_RegisterPage_Register_With_Non_Existing_Email
+TC_01_06-Ryanair_MainPage_Register_With_Non_Existing_Email
   Register With Incorrect Value In Field Result Label Color  ${Register_Email_Field}  Ema1l@l1amE.com  \#cf2e1d
 
-TC07-Ryanair_RegisterPage_Register_With_Weak_Password
+TC_01_07-Ryanair_MainPage_Register_With_Weak_Password
   Register With Incorrect Value In Field Result Label Color  ${Register_Password_Field}  passwd  \#cf2e1d

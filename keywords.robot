@@ -107,6 +107,25 @@ Check If Search Flight Is Present
   Element Should Be Visible  ${MainPage_Departure_Airport_Field}
   Wait Until Page Contains  ${Expected_Text}
 
+Choose Ostrava As Departure Airport
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Button}
+  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
+  Element Should Be Visible  ${MainPage_Destination_Airport_Field}
+  Click Element  ${MainPage_Departure_Airport_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Czech_Airports_Button}
+  Click Element  ${MainPage_Search_Flight_Czech_Airports_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Ostrava_Airport_Button}
+  Click Element  ${MainPage_Search_Flight_Ostrava_Airport_Button}
+
+Choose Malaga As Destination Airport
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Button}
+  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
+  Element Should Be Visible  ${MainPage_Destination_Airport_Field}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Spanish_Airports_Button}
+  Click Element  ${MainPage_Search_Flight_Spanish_Airports_Button}
+  Wait Until Element Is Visible  ${MainPage_Search_Flight_Malaga_Airport_Button}
+  Click Element  ${MainPage_Search_Flight_Malaga_Airport_Button}
+
 Search Flight With Empty Airports
   [Arguments]  ${Expected_Text}
   Element Should Be Visible  ${MainPage_Departure_Airport_Container}
@@ -122,29 +141,16 @@ Search Flight With Empty Airports
 
 Search Flight With Empty Destination Airport
   [Arguments]  ${Expected_Text}
-  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
-  Element Should Be Visible  ${MainPage_Destination_Airport_Container}
-  Element Should Be Visible  ${MainPage_Destination_Airport_Field}
-  Element Should Be Visible  ${MainPage_Search_Flight_Button}
-  Click Element  ${MainPage_Departure_Airport_Field}
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Czech_Airports_Button}
-  Click Element  ${MainPage_Search_Flight_Czech_Airports_Button}
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Ostrava_Airport_Button}
-  Click Element  ${MainPage_Search_Flight_Ostrava_Airport_Button}
+  Choose Ostrava As Departure Airport
   Submit Form  ${MainPage_Search_Flight_Button}
   Element Attribute Value Should Be  ${MainPage_Destination_Airport_Field}  placeholder  ${Expected_Text}
   Element Attribute Value Should Be  ${MainPage_Destination_Airport_Container}  class    ${MainPage_Search_Flight_Error_Css_Class_For_Destination}
 
 Search Flight With Empty Travel Dates
   [Arguments]  ${Expected_Text}
-  Element Should Be Visible  ${MainPage_Destination_Airport_Container}
   Element Should Be Visible  ${MainPage_Destination_Airport_Field}
-  Element Should Be Visible  ${MainPage_Search_Flight_Button}
   Click Element  ${MainPage_Destination_Airport_Field}
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Spanish_Airports_Button}
-  Click Element  ${MainPage_Search_Flight_Spanish_Airports_Button}
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Malaga_Airport_Button}
-  Click Element  ${MainPage_Search_Flight_Malaga_Airport_Button}
+  Choose Malaga As Destination Airport
   Submit Form  ${MainPage_Search_Flight_Button}
   Wait Until Page Contains  ${Expected_Text}
   Element Attribute Value Should Be  ${MainPage_Start_Date_Field}  class    ${MainPage_Search_Flight_Error_Css_Class_For_Start_Date}
@@ -173,20 +179,8 @@ Search Flight With Valid Attributes
   Wait Until Page Contains  ${Expected_Text}
 
 Search Flight Check One Way Flight Form
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Button}
-  Element Should Be Visible  ${MainPage_Departure_Airport_Field}
-  Element Should Be Visible  ${MainPage_Destination_Airport_Field}
-  Element Should Be Visible  ${MainPage_Search_Flight_One_Way_Flight_RadioButton}
-  Click Element  ${MainPage_Departure_Airport_Field}
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Czech_Airports_Button}
-  Click Element  ${MainPage_Search_Flight_Czech_Airports_Button}
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Ostrava_Airport_Button}
-  Click Element  ${MainPage_Search_Flight_Ostrava_Airport_Button}
-  Sleep  1
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Spanish_Airports_Button}
-  Click Element  ${MainPage_Search_Flight_Spanish_Airports_Button}
-  Wait Until Element Is Visible  ${MainPage_Search_Flight_Malaga_Airport_Button}
-  Click Element  ${MainPage_Search_Flight_Malaga_Airport_Button}
+  Choose Ostrava As Departure Airport
+  Choose Malaga As Destination Airport
   Sleep  1
   Click Element  ${MainPage_Search_Flight_One_Way_Flight_RadioButton}
   Wait Until Element Is Not Visible  ${MainPage_Return_Date_Field}
