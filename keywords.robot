@@ -200,3 +200,10 @@ Search Flight With Promo Code
   Put Text Into Field  ${MainPage_Promo_Code_Field}  BestPromoCode
   Submit Form  ${MainPage_Search_Flight_Button}
   Wait Until Element Is Visible  ${MainPage_Promo_Code_Error_Element}
+
+Switch To Car Rent
+  Wait Until Element Is Visible  ${MainPage_Planning_Menu_DropDown_Button}
+  Click Element  ${MainPage_Planning_Menu_DropDown_Button}
+  Wait Until Element Is Visible  ${MainPage_Planning_Menu_Car_Rent_Button}
+  Click Element  ${MainPage_Planning_Menu_Car_Rent_Button}
+  Element Should Be Visible  ${MainPage_Car_Rent_Pick_Up_Field}

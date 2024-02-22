@@ -1,592 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.9.6 on darwin)" generated="2024-02-15T14:53:37.226628" rpa="false" schemaversion="5">
-<suite id="s1" name="MainPage Search Flight tests" source="/Users/martinpur/Documents/Automatizovane_testy_vzory/Automated_tests/MainPage_Search_Flight_tests.robot">
+<robot generator="Robot 7.0 (Python 3.9.6 on darwin)" generated="2024-02-20T10:20:24.587763" rpa="false" schemaversion="5">
+<suite id="s1" name="MainPage Car Rent tests" source="/Users/martinpur/Documents/Automatizovane_testy_vzory/Automated_tests/MainPage_Car_Rent_tests.robot">
 <test id="s1-t1" name="Pre-Conditions" line="18">
 <kw name="Pre Condition Open Browser And Maximize" owner="keywords">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${Speed}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-02-15T14:53:37.320483" elapsed="0.000157"/>
+<status status="PASS" start="2024-02-20T10:20:24.697259" elapsed="0.000132"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:37.320868" level="INFO">Opening browser 'Chrome' to base url 'https://www.ryanair.com/cz/cs'.</msg>
+<msg time="2024-02-20T10:20:24.697588" level="INFO">Opening browser 'Chrome' to base url 'https://www.ryanair.com/cz/cs'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-15T14:53:37.320742" elapsed="2.951797"/>
+<status status="PASS" start="2024-02-20T10:20:24.697480" elapsed="2.011697"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-15T14:53:40.273226" elapsed="0.614954"/>
+<status status="PASS" start="2024-02-20T10:20:26.709807" elapsed="0.620406"/>
 </kw>
 <kw name="Set Focus To Element" owner="SeleniumLibrary">
 <arg>${Cookie_Button}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:40.888625" elapsed="0.435365"/>
+<status status="PASS" start="2024-02-20T10:20:27.330514" elapsed="0.436084"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:41.324923" level="INFO">Clicking element '//*[@id="cookie-popup-with-overlay"]/div/div[3]/button[2]'.</msg>
+<msg time="2024-02-20T10:20:27.768949" level="INFO">Clicking element '//*[@id="cookie-popup-with-overlay"]/div/div[3]/button[2]'.</msg>
 <arg>${Cookie_Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:41.324429" elapsed="0.908219"/>
+<status status="PASS" start="2024-02-20T10:20:27.767662" elapsed="0.776762"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:42.233167" elapsed="0.450554"/>
+<status status="PASS" start="2024-02-20T10:20:28.544927" elapsed="0.446477"/>
 </kw>
 <arg>${ChromeBrowser}</arg>
 <arg>${URL}</arg>
 <arg>${UI_Element}</arg>
 <arg>0.2</arg>
-<status status="PASS" start="2024-02-15T14:53:37.319889" elapsed="5.364014"/>
+<status status="PASS" start="2024-02-20T10:20:24.696741" elapsed="4.295531"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:53:37.319539" elapsed="5.364605"/>
+<status status="PASS" start="2024-02-20T10:20:24.696437" elapsed="4.296952"/>
 </test>
-<test id="s1-t2" name="TC01-Ryanair_MainPage_Check_If_Flight_Search_Is_Present" line="21">
-<kw name="Check If Search Flight Is Present" owner="keywords">
+<test id="s1-t2" name="TC_04_01-Ryanair_MainPage_Switch_To_Car_Rent" line="21">
+<kw name="Switch To Car Rent" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MainPage_Planning_Menu_DropDown_Button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-20T10:20:28.997263" elapsed="0.437720"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T10:20:29.435854" level="INFO">Clicking element '//div[@class="header__center"]/hp-header-content-container/hp-header-content/hp-header-sections-group[2]/hp-header-menu-item[1]/button'.</msg>
+<arg>${MainPage_Planning_Menu_DropDown_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T10:20:29.435403" elapsed="0.459530"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MainPage_Planning_Menu_Car_Rent_Button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-20T10:20:29.896416" elapsed="0.433401"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T10:20:30.332627" level="INFO">Clicking element '//*[@id="ry-tooltip-7"]/div[2]/hp-header-dropdown-content/div/div/div[2]/ul/li[3]/a'.</msg>
+<arg>${MainPage_Planning_Menu_Car_Rent_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T10:20:30.331144" elapsed="4.517008"/>
+</kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:43.131341" level="INFO">Element '//*[@id="input-button__departure"]' is displayed.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
+<msg time="2024-02-20T10:20:35.286330" level="INFO">Element '//*[@id="searchbox-toolbox-fts-pickup"]' is displayed.</msg>
+<arg>${MainPage_Car_Rent_Pick_Up_Field}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:42.685106" elapsed="0.446524"/>
+<status status="PASS" start="2024-02-20T10:20:34.849318" elapsed="0.437630"/>
 </kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${Expected_Text}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T14:53:43.132125" elapsed="0.222710"/>
+<status status="PASS" start="2024-02-20T10:20:28.996225" elapsed="6.291313"/>
 </kw>
-<arg>Zpáteční let</arg>
-<status status="PASS" start="2024-02-15T14:53:42.684817" elapsed="0.670331"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:53:42.684384" elapsed="0.671119"/>
+<status status="PASS" start="2024-02-20T10:20:28.994374" elapsed="6.293975"/>
 </test>
-<test id="s1-t3" name="TC02-Ryanair_MainPage_Flight_Search_Empty_Airports" line="24">
-<kw name="Search Flight With Empty Airports" owner="keywords">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:43.791470" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div/fsw-input-button' is displayed.</msg>
-<arg>${MainPage_Departure_Airport_Container}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:43.357125" elapsed="0.434552"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:44.223877" level="INFO">Element '//*[@id="input-button__departure"]' is displayed.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:43.792045" elapsed="0.432037"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:44.654518" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button' is displayed.</msg>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:44.224455" elapsed="0.430310"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:44.655712" level="INFO">Clicking element '//*[@id="input-button__departure"]'.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:44.655173" elapsed="0.479765"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Clear_Airports_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:45.135117" elapsed="0.422890"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:45.560304" level="INFO">Clicking element '//*[@id="ry-tooltip-1"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/div/fsw-airports-list/div[1]/button'.</msg>
-<arg>${MainPage_Clear_Airports_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:45.559151" elapsed="0.487678"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T14:53:47.049273" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T14:53:46.048117" elapsed="1.001737"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:47.052963" elapsed="0.455406"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:47.510714" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button'.</msg>
-<arg>${Submit_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:47.509613" elapsed="0.450038"/>
-</kw>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<status status="PASS" start="2024-02-15T14:53:47.051201" elapsed="0.909208"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:48.394816" level="INFO">Element '//*[@id="input-button__departure"]' attribute 'placeholder' contains value 'Vyberte z'.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<arg>placeholder</arg>
-<arg>${Expected_Text}</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-02-15T14:53:47.961330" elapsed="0.434081"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:48.829476" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div/fsw-input-button' attribute 'class' contains value 'flight-widget-content__control flight-widget-content__control--airport ng-tns-c2916670490-4 input-button--connected-right input-button--error'.</msg>
-<arg>${MainPage_Departure_Airport_Container}</arg>
-<arg>class</arg>
-<arg>${MainPage_Search_Flight_Error_Css_Class_For_Departure}</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-02-15T14:53:48.396650" elapsed="0.433017"/>
-</kw>
-<arg>Vyberte z</arg>
-<status status="PASS" start="2024-02-15T14:53:43.356619" elapsed="5.473180"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:53:43.355866" elapsed="5.474127"/>
-</test>
-<test id="s1-t4" name="TC03-Ryanair_MainPage_Flight_Search_Empty_Destination_Airport" line="27">
-<kw name="Search Flight With Empty Destination Airport" owner="keywords">
-<kw name="Choose Ostrava As Departure Airport" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:48.831241" elapsed="0.429074"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:49.693991" level="INFO">Element '//*[@id="input-button__departure"]' is displayed.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:49.261559" elapsed="0.432601"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:50.121867" level="INFO">Element '//*[@id="input-button__destination"]' is displayed.</msg>
-<arg>${MainPage_Destination_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:49.694425" elapsed="0.428070"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:50.124743" level="INFO">Clicking element '//*[@id="input-button__departure"]'.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:50.123479" elapsed="0.457344"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Czech_Airports_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:50.581242" elapsed="0.437176"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:51.020272" level="INFO">Clicking element '//*[@id="ry-tooltip-1"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/fsw-countries/div[2]/div[8]/span'.</msg>
-<arg>${MainPage_Search_Flight_Czech_Airports_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:51.019311" elapsed="0.463583"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Ostrava_Airport_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:51.484200" elapsed="0.439406"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:51.926464" level="INFO">Clicking element '//*[@id="ry-tooltip-1"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/div/fsw-airports-list/div[2]/div[1]/fsw-airport-item[2]'.</msg>
-<arg>${MainPage_Search_Flight_Ostrava_Airport_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:51.924961" elapsed="0.485605"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:53:48.830997" elapsed="3.579750"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:52.411404" elapsed="0.425775"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:52.839374" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button'.</msg>
-<arg>${Submit_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:52.838317" elapsed="0.455725"/>
-</kw>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<status status="PASS" start="2024-02-15T14:53:52.410979" elapsed="0.883817"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:53.726920" level="INFO">Element '//*[@id="input-button__destination"]' attribute 'placeholder' contains value 'Vyberte destinaci'.</msg>
-<arg>${MainPage_Destination_Airport_Field}</arg>
-<arg>placeholder</arg>
-<arg>${Expected_Text}</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-02-15T14:53:53.295676" elapsed="0.431838"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:54.163234" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div/div/fsw-input-button' attribute 'class' contains value 'flight-widget-content__control flight-widget-content__control--destination-airport ng-tns-c2916670490-4 input-button--connected-left input-button--content-shifted input-button--error'.</msg>
-<arg>${MainPage_Destination_Airport_Container}</arg>
-<arg>class</arg>
-<arg>${MainPage_Search_Flight_Error_Css_Class_For_Destination}</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-02-15T14:53:53.728771" elapsed="0.435118"/>
-</kw>
-<arg>Vyberte destinaci</arg>
-<status status="PASS" start="2024-02-15T14:53:48.830659" elapsed="5.333934"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:53:48.830214" elapsed="5.335308"/>
-</test>
-<test id="s1-t5" name="TC04-Ryanair_MainPage_Flight_Search_Empty_Travel_Dates" line="30">
-<kw name="Search Flight With Empty Travel Dates" owner="keywords">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:54.602876" level="INFO">Element '//*[@id="input-button__destination"]' is displayed.</msg>
-<arg>${MainPage_Destination_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:54.170120" elapsed="0.433277"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:54.605443" level="INFO">Clicking element '//*[@id="input-button__destination"]'.</msg>
-<arg>${MainPage_Destination_Airport_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:54.604344" elapsed="0.472453"/>
-</kw>
-<kw name="Choose Malaga As Destination Airport" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:55.079351" elapsed="0.435965"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:55.952957" level="INFO">Element '//*[@id="input-button__departure"]' is displayed.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:55.516665" elapsed="0.436910"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:56.387035" level="INFO">Element '//*[@id="input-button__destination"]' is displayed.</msg>
-<arg>${MainPage_Destination_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:55.955005" elapsed="0.432538"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Spanish_Airports_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:56.388474" elapsed="0.439125"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:56.828008" level="INFO">Clicking element '//*[@id="ry-tooltip-3"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-destination-container/fsw-airports/fsw-countries/div[5]/div[3]/span'.</msg>
-<arg>${MainPage_Search_Flight_Spanish_Airports_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:56.827796" elapsed="0.456646"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Malaga_Airport_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:57.285764" elapsed="0.443456"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:57.729852" level="INFO">Clicking element '//*[@id="ry-tooltip-3"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-destination-container/fsw-airports/div/fsw-airports-list/div[2]/div[1]/fsw-airport-item'.</msg>
-<arg>${MainPage_Search_Flight_Malaga_Airport_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:57.729512" elapsed="0.492619"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:53:55.078294" elapsed="3.144044"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:58.222952" elapsed="0.426084"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:58.651696" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button'.</msg>
-<arg>${Submit_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:53:58.650342" elapsed="0.459536"/>
-</kw>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<status status="PASS" start="2024-02-15T14:53:58.222565" elapsed="0.888040"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${Expected_Text}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T14:53:59.111484" elapsed="0.226442"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:53:59.774122" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div[2]/div/fsw-input-button[1]' attribute 'class' contains value 'flight-widget-content__control flight-widget-content__control--date ng-tns-c2916670490-4 ng-trigger ng-trigger-datesFromTripTypeChange input-button--connected-right input-button--error'.</msg>
-<arg>${MainPage_Start_Date_Field}</arg>
-<arg>class</arg>
-<arg>${MainPage_Search_Flight_Error_Css_Class_For_Start_Date}</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-02-15T14:53:59.339298" elapsed="0.435389"/>
-</kw>
-<arg>Vyberte termín cesty</arg>
-<status status="PASS" start="2024-02-15T14:53:54.168738" elapsed="5.606527"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:53:54.166520" elapsed="5.609463"/>
-</test>
-<test id="s1-t6" name="TC06-Ryanair_MainPage_Flight_Search_Empty_Return_Date" line="33">
-<kw name="Search Flight With Empty Return Date" owner="keywords">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:00.210253" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button' is displayed.</msg>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:53:59.778635" elapsed="0.432231"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:00.646120" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div[2]/div/fsw-input-button[1]' is displayed.</msg>
-<arg>${MainPage_Start_Date_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:00.212040" elapsed="0.434619"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:00.648949" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div[2]/div/fsw-input-button[1]'.</msg>
-<arg>${MainPage_Start_Date_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:00.647746" elapsed="0.477072"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_June_Calendar_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:01.126112" elapsed="0.442906"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:01.571831" level="INFO">Clicking element '//*[@id="ry-tooltip-10"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-flexible-datepicker-container/fsw-datepicker/ry-datepicker-desktop/month-toggle/div/div[2]/div/div[5]/div[2]'.</msg>
-<arg>${MainPage_Search_Flight_June_Calendar_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:01.570348" elapsed="0.470479"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_June_3_Calendar_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:02.042177" elapsed="0.441837"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:02.486719" level="INFO">Clicking element '//*[@id="ry-tooltip-10"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-flexible-datepicker-container/fsw-datepicker/ry-datepicker-desktop/div/calendar[1]/calendar-body/div[3]/div[1]/div'.</msg>
-<arg>${MainPage_Search_Flight_June_3_Calendar_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:02.485391" elapsed="0.464210"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:02.952897" elapsed="0.438229"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:03.393551" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button'.</msg>
-<arg>${Submit_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:03.392487" elapsed="0.457322"/>
-</kw>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<status status="PASS" start="2024-02-15T14:54:02.951144" elapsed="0.899457"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${Expected_Text}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T14:54:03.851474" elapsed="0.222340"/>
-</kw>
-<arg>Vyberte termín cesty</arg>
-<status status="PASS" start="2024-02-15T14:53:59.777842" elapsed="4.296729"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:53:59.776572" elapsed="4.298726"/>
-</test>
-<test id="s1-t7" name="TC07-Ryanair_MainPage_Flight_Search_Flight_With_Valid_Attributes" line="36">
-<kw name="Search Flight With Valid Attributes" owner="keywords">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:04.511496" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button' is displayed.</msg>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:04.079016" elapsed="0.433092"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:04.954129" level="INFO">Element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div[2]/div/fsw-input-button[2]' is displayed.</msg>
-<arg>${MainPage_Return_Date_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:04.513341" elapsed="0.441448"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:04.957245" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[1]/div[2]/div/fsw-input-button[2]'.</msg>
-<arg>${MainPage_Return_Date_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:04.956045" elapsed="0.472890"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_June_6_Calendar_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:05.430256" elapsed="0.440476"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:05.873587" level="INFO">Clicking element '//*[@id="ry-tooltip-11"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-flexible-datepicker-container/fsw-datepicker/ry-datepicker-desktop/div/calendar[1]/calendar-body/div[3]/div[10]/div'.</msg>
-<arg>${MainPage_Search_Flight_June_6_Calendar_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:05.872102" elapsed="0.485307"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:06.359995" elapsed="0.435207"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:06.797854" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/div/fsw-flight-search-widget-controls-container/fsw-flight-search-widget-content-container/fsw-flight-search-widget-content/div[2]/div/button'.</msg>
-<arg>${Submit_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:06.796548" elapsed="0.464468"/>
-</kw>
-<arg>${MainPage_Search_Flight_Button}</arg>
-<status status="PASS" start="2024-02-15T14:54:06.358576" elapsed="0.902675"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T14:54:08.262928" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T14:54:07.261508" elapsed="1.001729"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${Expected_Text}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T14:54:08.263802" elapsed="0.224134"/>
-</kw>
-<arg>Ostrava do Malaga</arg>
-<status status="PASS" start="2024-02-15T14:54:04.077975" elapsed="4.410234"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:54:04.076123" elapsed="4.412407"/>
-</test>
-<test id="s1-t8" name="TC08-Ryanair_MainPage_Flight_Search_One_Way_Flight_No_Return_Date_Present" line="39">
-<kw name="Go Back" owner="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" start="2024-02-15T14:54:08.489566" elapsed="0.747721"/>
-</kw>
-<kw name="Search Flight Check One Way Flight Form" owner="keywords">
-<kw name="Choose Ostrava As Departure Airport" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:09.238007" elapsed="0.428993"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:10.101220" level="INFO">Element '//*[@id="input-button__departure"]' is displayed.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:09.667776" elapsed="0.433632"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:10.532259" level="INFO">Element '//*[@id="input-button__destination"]' is displayed.</msg>
-<arg>${MainPage_Destination_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:10.101706" elapsed="0.431128"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:10.535223" level="INFO">Clicking element '//*[@id="input-button__departure"]'.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:10.533979" elapsed="0.482123"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Czech_Airports_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:11.017257" elapsed="0.443985"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:11.464039" level="INFO">Clicking element '//*[@id="ry-tooltip-1"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/fsw-countries/div[2]/div[8]/span'.</msg>
-<arg>${MainPage_Search_Flight_Czech_Airports_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:11.462562" elapsed="0.468676"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Ostrava_Airport_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:11.932605" elapsed="0.443131"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:12.378781" level="INFO">Clicking element '//*[@id="ry-tooltip-1"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/div/fsw-airports-list/div[2]/div[1]/fsw-airport-item[2]'.</msg>
-<arg>${MainPage_Search_Flight_Ostrava_Airport_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:12.377373" elapsed="0.469075"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:54:09.237829" elapsed="3.609220"/>
-</kw>
-<kw name="Choose Malaga As Destination Airport" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:12.849210" elapsed="0.431060"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:13.716481" level="INFO">Element '//*[@id="input-button__departure"]' is displayed.</msg>
-<arg>${MainPage_Departure_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:13.281379" elapsed="0.435725"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:14.153296" level="INFO">Element '//*[@id="input-button__destination"]' is displayed.</msg>
-<arg>${MainPage_Destination_Airport_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:13.718297" elapsed="0.435584"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Spanish_Airports_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:14.154841" elapsed="0.456112"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:14.613717" level="INFO">Clicking element '//*[@id="ry-tooltip-3"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-destination-container/fsw-airports/fsw-countries/div[5]/div[3]/span'.</msg>
-<arg>${MainPage_Search_Flight_Spanish_Airports_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:14.612276" elapsed="0.465066"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Search_Flight_Malaga_Airport_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:15.078723" elapsed="0.435705"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:15.517257" level="INFO">Clicking element '//*[@id="ry-tooltip-3"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-destination-container/fsw-airports/div/fsw-airports-list/div[2]/div[1]/fsw-airport-item'.</msg>
-<arg>${MainPage_Search_Flight_Malaga_Airport_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:15.515780" elapsed="0.491666"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:54:12.848057" elapsed="3.159649"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T14:54:17.009758" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T14:54:16.007978" elapsed="1.002183"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:54:17.011815" level="INFO">Clicking element '//*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/ry-radio-button[2]'.</msg>
-<arg>${MainPage_Search_Flight_One_Way_Flight_RadioButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:54:17.010932" elapsed="0.456766"/>
-</kw>
-<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Return_Date_Field}</arg>
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2024-02-15T14:54:17.468784" elapsed="0.218284"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:54:09.237566" elapsed="8.450234"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:54:08.488887" elapsed="9.199715"/>
-</test>
-<test id="s1-t9" name="Post-Conditions" line="43">
+<test id="s1-t3" name="Post-Conditions" line="24">
 <kw name="Post Condition Close Browser" owner="keywords">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T14:54:18.692443" level="INFO">Slept 1 second.</msg>
+<msg time="2024-02-20T10:20:36.293851" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T14:54:17.691600" elapsed="1.001211"/>
+<status status="PASS" start="2024-02-20T10:20:35.291152" elapsed="1.002821"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-15T14:54:18.693340" elapsed="0.272909"/>
+<status status="PASS" start="2024-02-20T10:20:36.294189" elapsed="0.277544"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:54:17.690748" elapsed="1.275706"/>
+<status status="PASS" start="2024-02-20T10:20:35.290376" elapsed="1.281663"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:54:17.689401" elapsed="1.277361"/>
+<status status="PASS" start="2024-02-20T10:20:35.289055" elapsed="1.283501"/>
 </test>
-<status status="PASS" start="2024-02-15T14:53:37.227649" elapsed="41.739800"/>
+<status status="PASS" start="2024-02-20T10:20:24.588399" elapsed="11.985022"/>
 </suite>
 <statistics>
 <total>
-<stat pass="9" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="9" fail="0" skip="0" id="s1" name="MainPage Search Flight tests">MainPage Search Flight tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="MainPage Car Rent tests">MainPage Car Rent tests</stat>
 </suite>
 </statistics>
 <errors>

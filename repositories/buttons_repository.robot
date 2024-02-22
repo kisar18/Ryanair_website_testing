@@ -39,3 +39,7 @@ ${MainPage_Search_Flight_One_Way_Flight_RadioButton}  //*[@id="main-content"]/fs
 ${MainPage_Search_Flight_Two_Way_Flight_RadioButton}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/ry-radio-button[1]
 
 ${MainPage_Search_Flight_Promo_Code_RadioButton}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/fsw-promo-code-container/fsw-promo-code/button
+
+${MainPage_Planning_Menu_DropDown_Button}  //div[@class="header__center"]/hp-header-content-container/hp-header-content/hp-header-sections-group[2]/hp-header-menu-item[1]/button
+
+${MainPage_Planning_Menu_Car_Rent_Button}  //*[@id="ry-tooltip-7"]/div[2]/hp-header-dropdown-content/div/div/div[2]/ul/li[3]/a

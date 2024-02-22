@@ -1,0 +1,18 @@
+ID - TC_02_01
+Title - TC_02_01-Ryanair_MainPage_Navigate_To_Login
+Description - Test case that tests navigation button for login
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Click button "Přihlásit se" in the upper-right bar
+
+Expected result
+  Modal login window is present
+
+Version - 1.0 

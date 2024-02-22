@@ -37,3 +37,5 @@ ${MainPage_Return_Date_Field}  //*[@id="main-content"]/fsw-flight-search-widget-
 ${MainPage_Promo_Code_Field}  //*[@id="main-content"]/fsw-flight-search-widget-container/fsw-flight-search-widget/fsw-trip-type-container/fsw-trip-type/fsw-promo-code-container/fsw-promo-code/ry-input-d/div/input
 
 ${MainPage_Promo_Code_Error_Element}  /html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/banners-container/promo-code-message/promo-code-error-message
+
+${MainPage_Car_Rent_Pick_Up_Field}  //*[@id="searchbox-toolbox-fts-pickup"]

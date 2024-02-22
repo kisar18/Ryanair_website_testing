@@ -30,13 +30,13 @@ TC_02_03-Ryanair_MainPage_Login_With_Incorrect_Informations
 TC_02_04-Ryanair_MainPage_Login_With_Bad_Email_Format
   Login With Email Password  email@com  passwd  Neplatný formát e-mailové adresy
 
-TC_02_05-Ryanair_MainPage_Login_With_Correct_Name_And_Incorrect_Password
+TC_02_05-Ryanair_MainPage_Login_With_Correct_Email_And_Incorrect_Password
   Login With Email Password  mapewe1725@giratex.com  passwd  Neplatný e-mail nebo heslo
 
 TC_02_06-Ryanair_MainPage_Login_With_Non_Existing_Email
   Login With Email Password  Ema1l@l1amE.com  passwd  Neplatný e-mail nebo heslo
 
-TC_02_07-Ryanair_MainPage_Login_With_Correct_Name_And_Correct_Password
+TC_02_07-Ryanair_MainPage_Login_With_Correct_Informations
   Login With Email Password  mapewe1725@giratex.com  Hesl0Hesl0  mapewe1725@giratex.com
 
 Post-Conditions

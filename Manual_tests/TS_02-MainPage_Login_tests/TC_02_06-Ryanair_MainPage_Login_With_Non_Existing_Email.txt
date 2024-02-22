@@ -1,0 +1,21 @@
+ID - TC_02_06
+Title - TC_02_06-Ryanair_MainPage_Login_With_Non_Existing_Email
+Description - Test case that tests login with non existing email
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+  6) Click button "Přihlásit se" in the upper-right bar
+
+Steps
+  1) Put "Ema1l@l1amE.com" into the email field
+  2) Put "passwd" into the password field
+  3) Click button "Přihlásit se"
+
+Expected result
+  Warning indicating incorrect email or password should be present
+
+Version - 1.0 

@@ -19,6 +19,7 @@ Pre-Conditions
   Pre Condition Open Browser And Maximize  ${ChromeBrowser}  ${URL}  ${UI_Element}  0.2
 
 TC_04_01-Ryanair_MainPage_Switch_To_Car_Rent
+  Switch To Car Rent
 
 Post-Conditions
   Post Condition Close Browser
