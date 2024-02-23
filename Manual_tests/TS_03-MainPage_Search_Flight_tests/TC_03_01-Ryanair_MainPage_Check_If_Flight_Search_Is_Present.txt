@@ -1,0 +1,18 @@
+ID - TC_03_01
+Title - TC_03_01-Ryanair_MainPage_Check_If_Search_Flight_Is_Present
+Description - Test case that tests if search flight is present on the main page
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Check if page contains search flight fields
+
+Expected result
+  Search flight fields are present
+
+Version - 1.0 

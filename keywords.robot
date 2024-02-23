@@ -153,7 +153,7 @@ Search Flight With Empty Travel Dates
   Choose Malaga As Destination Airport
   Submit Form  ${MainPage_Search_Flight_Button}
   Wait Until Page Contains  ${Expected_Text}
-  Element Attribute Value Should Be  ${MainPage_Start_Date_Field}  class    ${MainPage_Search_Flight_Error_Css_Class_For_Start_Date}
+  Element Attribute Value Should Be  ${MainPage_Start_Date_Field}  class  ${MainPage_Search_Flight_Error_Css_Class_For_Start_Date}
 
 Search Flight With Empty Return Date
   [Arguments]  ${Expected_Text}

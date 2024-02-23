@@ -1,0 +1,20 @@
+ID - TC_03_07
+Title - TC_03_07-Ryanair_MainPage_Flight_Search_One_Way_Flight_No_Return_Date
+Description - Test case that tests one way flight search
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Click radio button "Jednosměrná"
+  2) Choose a departure airport
+  3) Choose a destination airport
+
+Expected result
+  The return date field should not be present
+
+Version - 1.0 

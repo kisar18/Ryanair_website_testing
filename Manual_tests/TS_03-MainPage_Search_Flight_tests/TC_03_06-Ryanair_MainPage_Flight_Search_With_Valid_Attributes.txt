@@ -1,0 +1,22 @@
+ID - TC_03_06
+Title - TC_03_06-Ryanair_MainPage_Flight_Search_With_Valid_Attributes
+Description - Test case that tests flight search with valid flight informations
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Choose a departure airport
+  2) Choose a destination airport
+  3) Choose a start date of the trip
+  4) Choose a return date of the trip
+  5) Click button "Vyhledat"
+
+Expected result
+  The flight detail page with the departure and destination cities should be present 
+
+Version - 1.0 

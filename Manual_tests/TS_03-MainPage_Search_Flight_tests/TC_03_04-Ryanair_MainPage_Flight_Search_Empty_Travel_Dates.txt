@@ -1,0 +1,20 @@
+ID - TC_03_04
+Title - TC_03_04-Ryanair_MainPage_Flight_Search_Empty_Travel_Dates
+Description - Test case that tests flight search with empty travel dates
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Choose a departure airport
+  2) Choose a destination airport
+  3) Click button "Vyhledat"
+
+Expected result
+  The start date field shoud contain "Vyberte termín cesty" and class of the field should have error css class
+
+Version - 1.0 
