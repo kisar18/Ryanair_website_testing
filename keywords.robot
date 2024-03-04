@@ -101,7 +101,7 @@ Login With Email Password
   Submit Form  ${Login_Button}
   Wait Until Page Contains  ${Expected_Text}
 
-# MainPage UI elements testing
+# Flight search keywords
 Check If Search Flight Is Present
   [Arguments]  ${Expected_Text}
   Element Should Be Visible  ${MainPage_Departure_Airport_Field}
@@ -201,9 +201,47 @@ Search Flight With Promo Code
   Submit Form  ${MainPage_Search_Flight_Button}
   Wait Until Element Is Visible  ${MainPage_Promo_Code_Error_Element}
 
+# Car rent keywords
 Switch To Car Rent
   Wait Until Element Is Visible  ${MainPage_Planning_Menu_DropDown_Button}
   Click Element  ${MainPage_Planning_Menu_DropDown_Button}
   Wait Until Element Is Visible  ${MainPage_Planning_Menu_Car_Rent_Button}
   Click Element  ${MainPage_Planning_Menu_Car_Rent_Button}
   Element Should Be Visible  ${MainPage_Car_Rent_Pick_Up_Field}
+
+Car Rent Submit Empty Destination
+  [Arguments]  ${Expected_text}
+  Wait Until Element Is Visible  ${Car_Rent_Pick_Up_Field}
+  Clear Element Text  ${Car_Rent_Pick_Up_Field}
+  Submit Form  ${Car_Rent_Submit_Button}
+  Wait Until Page Contains  ${Expected_Text}
+
+Car Rent Submit Bad Time
+  [Arguments]  ${Expected_Text}
+  Wait Until Element Is Visible  ${Car_Rent_Pick_Up_Field}
+  Submit Form  ${Car_Rent_Reject_Cookies_Button}
+  Click Element  ${Car_Rent_Start_Date_Field}
+  Wait Until Element Is Visible  ${Car_Rent_Start_Date_Calendar_Field}
+  Click Element  ${Car_Rent_Start_Date_Calendar_Field}
+  Sleep  0.5
+  Click Element  ${Car_Rent_Start_Date_Calendar_Field}
+  Submit Form  ${Car_Rent_Submit_Button}
+  Wait Until Page Contains  ${Expected_Text}
+
+Car Rent Different Return Place
+  Wait Until Element Is Visible  ${Car_Rent_Return_Place_Field_Trigger}
+  Click Element  ${Car_Rent_Return_Place_Field_Trigger}
+  Element Should Be Visible  ${Car_Rent_Return_Place_Field}
+
+Car Rent Drivers Age
+  Wait Until Element Is Visible  ${Car_Rent_Drivers_Age_Checkbox}
+  Click Element  ${Car_Rent_Drivers_Age_Checkbox}
+  Element Should Be Visible  ${Car_Rent_Drivers_Age_Input_Field}
+
+# Main page UI elements keywords
+
+MainPage Swap Searches
+
+MainPage Travel PopUp
+
+MainPage Offering Cards

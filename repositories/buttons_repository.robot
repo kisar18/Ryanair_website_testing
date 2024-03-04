@@ -42,4 +42,11 @@ ${MainPage_Search_Flight_Promo_Code_RadioButton}  //*[@id="main-content"]/fsw-fl
 
 ${MainPage_Planning_Menu_DropDown_Button}  //div[@class="header__center"]/hp-header-content-container/hp-header-content/hp-header-sections-group[2]/hp-header-menu-item[1]/button
 
-${MainPage_Planning_Menu_Car_Rent_Button}  //*[@id="ry-tooltip-7"]/div[2]/hp-header-dropdown-content/div/div/div[2]/ul/li[3]/a
+
+# Buttons related to car rent
+
+${MainPage_Planning_Menu_Car_Rent_Button}  //*[@id="ry-tooltip-9"]/div[2]/hp-header-dropdown-content/div/div/div[2]/ul/li[3]/a
+
+${Car_Rent_Submit_Button}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[3]/button
+
+${Car_Rent_Reject_Cookies_Button}  //*[@id="onetrust-reject-all-handler"]

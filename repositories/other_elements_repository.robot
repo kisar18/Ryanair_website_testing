@@ -38,4 +38,25 @@ ${MainPage_Promo_Code_Field}  //*[@id="main-content"]/fsw-flight-search-widget-c
 
 ${MainPage_Promo_Code_Error_Element}  /html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/banners-container/promo-code-message/promo-code-error-message
 
+# Car rent elements
 ${MainPage_Car_Rent_Pick_Up_Field}  //*[@id="searchbox-toolbox-fts-pickup"]
+
+${Car_Rent_Pick_Up_Field}  //*[@id="searchbox-toolbox-fts-pickup"]
+
+${Car_Rent_Start_Date_Field}  //*[@id="searchbox-toolbox-date-picker-pickup-date"]
+
+${Car_Rent_Return_Date_Field}  //*[@id="searchbox-toolbox-date-picker-dropoff-date"]
+
+${Car_Rent_Start_Time_Field}  //*[@id="searchbox-toolbox-pickup-time"]
+
+${Car_Rent_Return_Time_Field}  //*[@id="searchbox-toolbox-dropoff-time"]
+
+${Car_Rent_Return_Place_Field_Trigger}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[3]/div[1]/div/div/label
+
+${Car_Rent_Drivers_Age_Checkbox}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[3]/div[2]/div/div/div/div/label
+
+${Car_Rent_Drivers_Age_Input_Field}  //*[@id="drivers-age-input-text"]
+
+${Car_Rent_Start_Date_Calendar_Field}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/span/div/div[1]/div/div/div/div[1]/table/tbody/tr[3]/td[1]
+
+${Car_Rent_Return_Place_Field}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]

@@ -18,20 +18,14 @@ ${Result_Title}  Oficiální internetové stránky Ryanair | Levné lety | Exklu
 Pre-Conditions
   Pre Condition Open Browser And Maximize  ${ChromeBrowser}  ${URL}  ${UI_Element}  0.2
 
-TC_04_01-Ryanair_MainPage_Switch_To_Car_Rent
-  Switch To Car Rent
+TC_05_01-Ryanair_MainPage_Swaping_Searches
+  MainPage Swap Searches
 
-TC_04_02-Ryanair_MainPage_Car_Rent_Submit_Empty_Destination
-  Car Rent Submit Empty Destination  Zadejte prosím místo vyzvednutí
+TC_05_02-Ryanair_MainPage_Travel_Info_PopUp
+  MainPage Travel PopUp
 
-TC_04_03-Ryanair_MainPage_Car_Rent_Submit_With_Bad_Return_Time
-  Car Rent Submit Bad Time  Mezi vyzvednutím a navrácením musí být alespoň 1 hodina rozdíl
-
-TC_04_04-Ryanair_MainPage_Car_Rent_Check_Different_Return_Place
-  Car Rent Different Return Place
-
-TC_04_05-Ryanair_MainPage_Car_Rent_Uncheck_Drivers_Age
-  Car Rent Drivers Age
+TC_05_03-Ryanair_MainPage_Hover_On_Offering_Cards
+  MainPage Offering Cards
 
 Post-Conditions
   Post Condition Close Browser
