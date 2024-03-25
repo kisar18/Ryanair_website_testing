@@ -239,9 +239,25 @@ Car Rent Drivers Age
   Element Should Be Visible  ${Car_Rent_Drivers_Age_Input_Field}
 
 # Main page UI elements keywords
-
 MainPage Swap Searches
+  Wait Until Element Is Visible  ${MainPage_Flight_Search_Button}
+  Click Element  ${MainPage_Car_Rent_Button}
+  Wait Until Page Contains  Jdeme na to
+  Click Element  ${MainPage_Hotel_Search_Button}
+  Wait Until Page Contains  Vyhledat
 
 MainPage Travel PopUp
+  Wait Until Element Is Visible  ${MainPage_Flight_Search_Button}
+  Click Element  ${MainPage_Flight_Search_Button}
+  Mouse Over  ${MainPage_Destination_Airport_Field}
+  Element Should Be Visible  ${MainPage_Destination_PopUp}
 
 MainPage Offering Cards
+  Wait Until Element Is Visible  ${MainPage_Car_Rent_Card}
+  Mouse Over  ${MainPage_Destination_Airport_Field}
+  Wait Until Page Contains  Vyhledejte nejlepší ceny na trhu
+  Mouse Over  ${MainPage_Gift_Card}
+  Wait Until Page Contains  Darujte něco, co si opravdu zamilují
+  Mouse Over  ${MainPage_Food_Menu_Card}
+  Wait Until Page Contains  nabídky jídel a nápojů!
+ 

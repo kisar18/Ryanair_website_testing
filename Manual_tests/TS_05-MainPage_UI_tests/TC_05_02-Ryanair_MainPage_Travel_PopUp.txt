@@ -1,0 +1,18 @@
+ID - TC_05_02
+Title - TC_05_02-Ryanair_MainPage_Travel_PopUp
+Description - Test case that tests travel pop-up asking you about the destination
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Hover over destination field
+
+Expected result
+  Pop-up with text "Nevíte kam se vydat?" should appear
+
+Version - 1.0 

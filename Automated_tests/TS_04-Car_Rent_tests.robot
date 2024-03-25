@@ -21,16 +21,16 @@ Pre-Conditions
 TC_04_01-Ryanair_MainPage_Switch_To_Car_Rent
   Switch To Car Rent
 
-TC_04_02-Ryanair_MainPage_Car_Rent_Submit_Empty_Destination
+TC_04_02-Ryanair_Car_Rent_Submit_Empty_Destination
   Car Rent Submit Empty Destination  Zadejte prosím místo vyzvednutí
 
-TC_04_03-Ryanair_MainPage_Car_Rent_Submit_With_Bad_Return_Time
+TC_04_03-Ryanair_Car_Rent_Submit_With_Bad_Return_Time
   Car Rent Submit Bad Time  Mezi vyzvednutím a navrácením musí být alespoň 1 hodina rozdíl
 
-TC_04_04-Ryanair_MainPage_Car_Rent_Check_Different_Return_Place
+TC_04_04-Ryanair_Car_Rent_Check_Different_Return_Place
   Car Rent Different Return Place
 
-TC_04_05-Ryanair_MainPage_Car_Rent_Uncheck_Drivers_Age
+TC_04_05-Ryanair_Car_Rent_Uncheck_Drivers_Age
   Car Rent Drivers Age
 
 Post-Conditions

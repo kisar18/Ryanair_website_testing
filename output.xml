@@ -1,267 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.9.6 on darwin)" generated="2024-03-04T10:12:44.456249" rpa="false" schemaversion="5">
-<suite id="s1" name="TS 04-MainPage Car Rent tests" source="/Users/martinpur/Documents/Automatizovane_testy_vzory/Automated_tests/TS_04-MainPage_Car_Rent_tests.robot">
+<robot generator="Robot 7.0 (Python 3.9.6 on darwin)" generated="2024-03-25T13:03:15.480559" rpa="false" schemaversion="5">
+<suite id="s1" name="TS 05-MainPage UI tests" source="/Users/martinpur/Documents/Automatizovane_testy_vzory/Automated_tests/TS_05-MainPage_UI_tests.robot">
 <test id="s1-t1" name="Pre-Conditions" line="18">
 <kw name="Pre Condition Open Browser And Maximize" owner="keywords">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${Speed}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-03-04T10:12:44.549462" elapsed="0.000123"/>
+<status status="PASS" start="2024-03-25T13:03:15.591311" elapsed="0.000135"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:12:44.549789" level="INFO">Opening browser 'Chrome' to base url 'https://www.ryanair.com/cz/cs'.</msg>
+<msg time="2024-03-25T13:03:15.591656" level="INFO">Opening browser 'Chrome' to base url 'https://www.ryanair.com/cz/cs'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-04T10:12:44.549681" elapsed="14.736053"/>
+<status status="PASS" start="2024-03-25T13:03:15.591545" elapsed="1.645947"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-03-04T10:12:59.286053" elapsed="0.618672"/>
+<status status="PASS" start="2024-03-25T13:03:17.238224" elapsed="0.609004"/>
 </kw>
 <kw name="Set Focus To Element" owner="SeleniumLibrary">
 <arg>${Cookie_Button}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:12:59.905003" elapsed="0.429653"/>
+<status status="PASS" start="2024-03-25T13:03:17.848993" elapsed="0.434943"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:00.337202" level="INFO">Clicking element '//*[@id="cookie-popup-with-overlay"]/div/div[3]/button[2]'.</msg>
+<msg time="2024-03-25T13:03:18.286850" level="INFO">Clicking element '//*[@id="cookie-popup-with-overlay"]/div/div[3]/button[2]'.</msg>
 <arg>${Cookie_Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:00.335705" elapsed="9.775717"/>
+<status status="PASS" start="2024-03-25T13:03:18.285364" elapsed="0.754981"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:10.111894" elapsed="0.454569"/>
+<status status="PASS" start="2024-03-25T13:03:19.040846" elapsed="0.446331"/>
 </kw>
 <arg>${ChromeBrowser}</arg>
 <arg>${URL}</arg>
 <arg>${UI_Element}</arg>
 <arg>0.2</arg>
-<status status="PASS" start="2024-03-04T10:12:44.548960" elapsed="26.018352"/>
+<status status="PASS" start="2024-03-25T13:03:15.590775" elapsed="3.897263"/>
 </kw>
-<status status="PASS" start="2024-03-04T10:12:44.548636" elapsed="26.019665"/>
+<status status="PASS" start="2024-03-25T13:03:15.590454" elapsed="3.898816"/>
 </test>
-<test id="s1-t2" name="TC_04_01-Ryanair_MainPage_Switch_To_Car_Rent" line="21">
-<kw name="Switch To Car Rent" owner="keywords">
+<test id="s1-t2" name="TC_05_01-Ryanair_MainPage_Swaping_Searches" line="21">
+<kw name="MainPage Swap Searches" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Planning_Menu_DropDown_Button}</arg>
+<arg>${MainPage_Flight_Search_Button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:10.571551" elapsed="0.440945"/>
+<status status="PASS" start="2024-03-25T13:03:19.493308" elapsed="0.441908"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:11.013478" level="INFO">Clicking element '//div[@class="header__center"]/hp-header-content-container/hp-header-content/hp-header-sections-group[2]/hp-header-menu-item[1]/button'.</msg>
-<arg>${MainPage_Planning_Menu_DropDown_Button}</arg>
+<msg time="2024-03-25T13:03:19.935894" level="INFO">Clicking element '//button[@aria-label="pronájem auta"]'.</msg>
+<arg>${MainPage_Car_Rent_Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:11.012937" elapsed="0.461405"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MainPage_Planning_Menu_Car_Rent_Button}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:11.474788" elapsed="0.428801"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:11.904520" level="INFO">Clicking element '//*[@id="ry-tooltip-9"]/div[2]/hp-header-dropdown-content/div/div/div[2]/ul/li[3]/a'.</msg>
-<arg>${MainPage_Planning_Menu_Car_Rent_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:11.903997" elapsed="3.571893"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:15.936896" level="INFO">Element '//*[@id="searchbox-toolbox-fts-pickup"]' is displayed.</msg>
-<arg>${MainPage_Car_Rent_Pick_Up_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:15.476284" elapsed="0.461082"/>
-</kw>
-<status status="PASS" start="2024-03-04T10:13:10.570778" elapsed="5.366963"/>
-</kw>
-<status status="PASS" start="2024-03-04T10:13:10.569163" elapsed="5.369180"/>
-</test>
-<test id="s1-t3" name="TC_04_02-Ryanair_MainPage_Car_Rent_Submit_Empty_Destination" line="24">
-<kw name="Car Rent Submit Empty Destination" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Car_Rent_Pick_Up_Field}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:15.940697" elapsed="0.430397"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>${Car_Rent_Pick_Up_Field}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:16.371960" elapsed="0.450092"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:16.823163" elapsed="0.423984"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:17.249978" level="INFO">Clicking element '//*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[3]/button'.</msg>
-<arg>${Submit_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:17.248538" elapsed="0.472354"/>
-</kw>
-<arg>${Car_Rent_Submit_Button}</arg>
-<status status="PASS" start="2024-03-04T10:13:16.822561" elapsed="0.898960"/>
+<status status="PASS" start="2024-03-25T13:03:19.935532" elapsed="0.460422"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${Expected_Text}</arg>
+<arg>Jdeme na to</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-04T10:13:17.722340" elapsed="0.224988"/>
-</kw>
-<arg>Zadejte prosím místo vyzvednutí</arg>
-<status status="PASS" start="2024-03-04T10:13:15.939994" elapsed="2.007548"/>
-</kw>
-<status status="PASS" start="2024-03-04T10:13:15.938923" elapsed="2.008937"/>
-</test>
-<test id="s1-t4" name="TC_04_03-Ryanair_MainPage_Car_Rent_Submit_With_Bad_Return_Time" line="27">
-<kw name="Car Rent Submit Bad Time" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Car_Rent_Pick_Up_Field}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:17.949449" elapsed="0.432595"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:18.385331" elapsed="0.436053"/>
+<status status="PASS" start="2024-03-25T13:03:20.396292" elapsed="0.220545"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:18.824161" level="INFO">Clicking element '//*[@id="onetrust-reject-all-handler"]'.</msg>
-<arg>${Submit_Button}</arg>
+<msg time="2024-03-25T13:03:20.617672" level="INFO">Clicking element '//button[@aria-label="hotely"]'.</msg>
+<arg>${MainPage_Hotel_Search_Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:18.822712" elapsed="0.464087"/>
-</kw>
-<arg>${Car_Rent_Reject_Cookies_Button}</arg>
-<status status="PASS" start="2024-03-04T10:13:18.383534" elapsed="0.903869"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:19.289248" level="INFO">Clicking element '//*[@id="searchbox-toolbox-date-picker-pickup-date"]'.</msg>
-<arg>${Car_Rent_Start_Date_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:19.288128" elapsed="0.476048"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Car_Rent_Start_Date_Calendar_Field}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:19.765462" elapsed="0.440213"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:20.208420" level="INFO">Clicking element '//*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/span/div/div[1]/div/div/div/div[1]/table/tbody/tr[3]/td[1]'.</msg>
-<arg>${Car_Rent_Start_Date_Calendar_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:20.207006" elapsed="0.468879"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-03-04T10:13:21.179602" level="INFO">Slept 500 milliseconds.</msg>
-<arg>0.5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-03-04T10:13:20.677219" elapsed="0.503003"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:21.182714" level="INFO">Clicking element '//*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/span/div/div[1]/div/div/div/div[1]/table/tbody/tr[3]/td[1]'.</msg>
-<arg>${Car_Rent_Start_Date_Calendar_Field}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:21.181347" elapsed="0.461399"/>
-</kw>
-<kw name="Submit Form" owner="keywords">
-<kw name="Set Focus To Element" owner="SeleniumLibrary">
-<arg>${Submit_Button}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:21.643458" elapsed="0.425139"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:22.071222" level="INFO">Clicking element '//*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[3]/button'.</msg>
-<arg>${Submit_Button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:22.069865" elapsed="0.461353"/>
-</kw>
-<arg>${Car_Rent_Submit_Button}</arg>
-<status status="PASS" start="2024-03-04T10:13:21.643108" elapsed="0.888743"/>
+<status status="PASS" start="2024-03-25T13:03:20.617239" elapsed="0.465133"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${Expected_Text}</arg>
+<arg>Vyhledat</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-04T10:13:22.532695" elapsed="0.225889"/>
+<status status="PASS" start="2024-03-25T13:03:21.083678" elapsed="0.226622"/>
 </kw>
-<arg>Mezi vyzvednutím a navrácením musí být alespoň 1 hodina rozdíl</arg>
-<status status="PASS" start="2024-03-04T10:13:17.948978" elapsed="4.810369"/>
+<status status="PASS" start="2024-03-25T13:03:19.492395" elapsed="1.818658"/>
 </kw>
-<status status="PASS" start="2024-03-04T10:13:17.948217" elapsed="4.812017"/>
+<status status="PASS" start="2024-03-25T13:03:19.490404" elapsed="1.821414"/>
 </test>
-<test id="s1-t5" name="TC_04_04-Ryanair_MainPage_Car_Rent_Check_Different_Return_Place" line="30">
-<kw name="Car Rent Different Return Place" owner="keywords">
+<test id="s1-t3" name="TC_05_02-Ryanair_MainPage_Travel_Info_PopUp" line="24">
+<kw name="MainPage Travel PopUp" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Car_Rent_Return_Place_Field_Trigger}</arg>
+<arg>${MainPage_Flight_Search_Button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:22.763886" elapsed="0.439612"/>
+<status status="PASS" start="2024-03-25T13:03:21.315207" elapsed="0.430861"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:23.205921" level="INFO">Clicking element '//*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[3]/div[1]/div/div/label'.</msg>
-<arg>${Car_Rent_Return_Place_Field_Trigger}</arg>
+<msg time="2024-03-25T13:03:21.748823" level="INFO">Clicking element '//button[@aria-label="lety"]'.</msg>
+<arg>${MainPage_Flight_Search_Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:23.204799" elapsed="0.464348"/>
+<status status="PASS" start="2024-03-25T13:03:21.747405" elapsed="0.476657"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-03-25T13:03:22.226560" level="INFO">Simulating Mouse Over on element '//*[@id="input-button__destination"]'.</msg>
+<arg>${MainPage_Destination_Airport_Field}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-03-25T13:03:22.225295" elapsed="0.709359"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:24.109212" level="INFO">Element '//*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]' is displayed.</msg>
-<arg>${Car_Rent_Return_Place_Field}</arg>
+<msg time="2024-03-25T13:03:23.158991" level="FAIL">Element with locator '//*[@id="ry-tooltip-2"]/div[2]/div/div[2]/span' not found.</msg>
+<arg>${MainPage_Destination_PopUp}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:23.670034" elapsed="0.439787"/>
+<status status="FAIL" start="2024-03-25T13:03:22.935925" elapsed="0.238656">Element with locator '//*[@id="ry-tooltip-2"]/div[2]/div/div[2]/span' not found.</status>
 </kw>
-<status status="PASS" start="2024-03-04T10:13:22.763110" elapsed="1.347310"/>
+<status status="FAIL" start="2024-03-25T13:03:21.314233" elapsed="1.860687">Element with locator '//*[@id="ry-tooltip-2"]/div[2]/div/div[2]/span' not found.</status>
 </kw>
-<status status="PASS" start="2024-03-04T10:13:22.761274" elapsed="1.349967"/>
+<status status="FAIL" start="2024-03-25T13:03:21.312530" elapsed="1.862787">Element with locator '//*[@id="ry-tooltip-2"]/div[2]/div/div[2]/span' not found.</status>
 </test>
-<test id="s1-t6" name="TC_04_05-Ryanair_MainPage_Car_Rent_Uncheck_Drivers_Age" line="33">
-<kw name="Car Rent Drivers Age" owner="keywords">
+<test id="s1-t4" name="TC_05_03-Ryanair_MainPage_Hover_On_Offering_Cards" line="27">
+<kw name="MainPage Offering Cards" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Car_Rent_Drivers_Age_Checkbox}</arg>
+<arg>${MainPage_Car_Rent_Card}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:24.114773" elapsed="0.437974"/>
+<status status="PASS" start="2024-03-25T13:03:23.177021" elapsed="0.433804"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:24.555500" level="INFO">Clicking element '//*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[3]/div[2]/div/div/div/div/label'.</msg>
-<arg>${Car_Rent_Drivers_Age_Checkbox}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T10:13:24.554016" elapsed="0.475564"/>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-03-25T13:03:23.613562" level="INFO">Simulating Mouse Over on element '//*[@id="input-button__destination"]'.</msg>
+<arg>${MainPage_Destination_Airport_Field}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-03-25T13:03:23.612125" elapsed="0.687459"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-03-04T10:13:25.471909" level="INFO">Element '//*[@id="drivers-age-input-text"]' is displayed.</msg>
-<arg>${Car_Rent_Drivers_Age_Input_Field}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-03-04T10:13:25.030803" elapsed="0.441689"/>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Vyhledejte nejlepší ceny na trhu</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-25T13:03:24.299898" elapsed="0.215339"/>
 </kw>
-<status status="PASS" start="2024-03-04T10:13:24.113767" elapsed="1.359326"/>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-03-25T13:03:24.517942" level="INFO">Simulating Mouse Over on element '(//img[@alt="DÁRKOVÉ POUKÁZKY"])[1]'.</msg>
+<arg>${MainPage_Gift_Card}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-03-25T13:03:24.516539" elapsed="0.717759"/>
 </kw>
-<status status="PASS" start="2024-03-04T10:13:24.112022" elapsed="1.361887"/>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Darujte něco, co si opravdu zamilují</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-25T13:03:25.234624" elapsed="0.218296"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-03-25T13:03:25.453546" level="INFO">Simulating Mouse Over on element '(//img[@alt="PALUBNÍ ČASOPIS"])[1]'.</msg>
+<arg>${MainPage_Food_Menu_Card}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-03-25T13:03:25.453246" elapsed="0.697347"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>nabídky jídel a nápojů!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-25T13:03:26.150867" elapsed="0.216934"/>
+</kw>
+<status status="PASS" start="2024-03-25T13:03:23.176649" elapsed="3.191697"/>
+</kw>
+<status status="PASS" start="2024-03-25T13:03:23.175708" elapsed="3.193321"/>
 </test>
-<test id="s1-t7" name="Post-Conditions" line="36">
+<test id="s1-t5" name="Post-Conditions" line="30">
 <kw name="Post Condition Close Browser" owner="keywords">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-03-04T10:13:26.478404" level="INFO">Slept 1 second.</msg>
+<msg time="2024-03-25T13:03:27.374120" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-03-04T10:13:25.477687" elapsed="1.001317"/>
+<status status="PASS" start="2024-03-25T13:03:26.371512" elapsed="1.003224"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-04T10:13:26.480120" elapsed="0.270321"/>
+<status status="PASS" start="2024-03-25T13:03:27.375834" elapsed="0.282483"/>
 </kw>
-<status status="PASS" start="2024-03-04T10:13:25.476653" elapsed="1.273933"/>
+<status status="PASS" start="2024-03-25T13:03:26.370732" elapsed="1.287988"/>
 </kw>
-<status status="PASS" start="2024-03-04T10:13:25.474910" elapsed="1.275898"/>
+<status status="PASS" start="2024-03-25T13:03:26.369590" elapsed="1.289685"/>
 </test>
-<status status="PASS" start="2024-03-04T10:12:44.456889" elapsed="42.294414"/>
+<status status="FAIL" start="2024-03-25T13:03:15.481199" elapsed="12.179185"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="7" fail="0" skip="0" id="s1" name="TS 04-MainPage Car Rent tests">TS 04-MainPage Car Rent tests</stat>
+<stat pass="4" fail="1" skip="0" id="s1" name="TS 05-MainPage UI tests">TS 05-MainPage UI tests</stat>
 </suite>
 </statistics>
 <errors>

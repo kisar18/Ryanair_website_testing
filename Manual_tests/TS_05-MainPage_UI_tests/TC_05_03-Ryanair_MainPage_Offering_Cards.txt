@@ -1,0 +1,21 @@
+ID - TC_05_03
+Title - TC_05_03-Ryanair_MainPage_Offering_Cards
+Description - Test case that tests hover effect on offering cards on the main page
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Scroll down to section "Na co nezapomenout"
+  2) Hover over the "OBJEVUJTE VÍC" card
+  3) Hover over the "DÁRKOVÉ POUKAZY JIŽ OD 750 KČ" card
+  4) Hover over the "PALUBNÍ ČASOPIS" card
+
+Expected result
+  While each card is hovered on it should show more description and link for more informations
+
+Version - 1.0 

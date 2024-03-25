@@ -50,3 +50,12 @@ ${MainPage_Planning_Menu_Car_Rent_Button}  //*[@id="ry-tooltip-9"]/div[2]/hp-hea
 ${Car_Rent_Submit_Button}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[3]/button
 
 ${Car_Rent_Reject_Cookies_Button}  //*[@id="onetrust-reject-all-handler"]
+
+
+# Buttons related to UI tests
+
+${MainPage_Flight_Search_Button}  //button[@aria-label="lety"]
+
+${MainPage_Car_Rent_Button}  //button[@aria-label="pronájem auta"]
+
+${MainPage_Hotel_Search_Button}  //button[@aria-label="hotely"]

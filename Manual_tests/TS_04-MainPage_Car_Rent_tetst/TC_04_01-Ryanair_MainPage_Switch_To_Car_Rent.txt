@@ -1,0 +1,19 @@
+ID - TC_04_01
+Title - TC_04_01-Ryanair_MainPage_Switch_To_Car_Rent
+Description - Test case that tests if navigation to car rent works as expected
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) In the top menu click the "Naplánovat" button
+  2) In the pop-up click on the right side on "Vyhledat pronájem auta"
+
+Expected result
+  Car rent form is present
+
+Version - 1.0 

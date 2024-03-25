@@ -60,3 +60,12 @@ ${Car_Rent_Drivers_Age_Input_Field}  //*[@id="drivers-age-input-text"]
 ${Car_Rent_Start_Date_Calendar_Field}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/span/div/div[1]/div/div/div/div[1]/table/tbody/tr[3]/td[1]
 
 ${Car_Rent_Return_Place_Field}  //*[@id="main"]/div[1]/div/div/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[2]
+
+# Main page UI elements
+${MainPage_Destination_PopUp}  //*[@id="ry-tooltip-2"]/div[2]/div/div[2]/span
+
+${MainPage_Car_Rent_Card}  (//img[@alt=" PRONÁJEM VOZU"])[1]
+
+${MainPage_Gift_Card}  (//img[@alt="DÁRKOVÉ POUKÁZKY"])[1]
+
+${MainPage_Food_Menu_Card}  (//img[@alt="PALUBNÍ ČASOPIS"])[1]

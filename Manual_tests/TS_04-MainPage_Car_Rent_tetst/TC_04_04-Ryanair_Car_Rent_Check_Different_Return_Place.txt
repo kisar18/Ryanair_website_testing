@@ -1,0 +1,19 @@
+ID - TC_04_04
+Title - TC_04_04-Ryanair_Car_Rent_Check_Different_Return_Place
+Description - Test case that tests on car rent page option to return car at different place
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+  6) Navigate to car rent page as in TS_04_01
+
+Steps
+  1) Mark the checkbox "Vrácení vozidla na jiné adrese"
+
+Expected result
+  Field for return place should appear
+
+Version - 1.0 

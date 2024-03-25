@@ -1,0 +1,19 @@
+ID - TC_05_01
+Title - TC_05_01-Ryanair_MainPage_Swapping_Searches
+Description - Test case that tests swapping between flight, car and hotel searches
+
+Pre-conditions
+  1) Operating system at least Windows 10 or macOS Sonoma 14.3.1
+  2) Internet connection available
+  3) Open website https://www.ryanair.com/cz/cs
+  4) Mouse, keyboard and display available
+  5) Refuse cookies by clicking the button "Ne děkuji"
+
+Steps
+  1) Click "PRONÁJEM AUTA" button
+  2) Click "HOTELY" button
+
+Expected result
+  At the beggining flight search should be active and then car rent search and after that hotel search
+
+Version - 1.0 
